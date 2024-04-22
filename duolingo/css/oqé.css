@@ -34,10 +34,32 @@ button{
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
-button:hover{
+.bt1:hover{
     cursor:pointer;
-    background-color: aqua;
+    background-color: greenyellow;
     transition: transform .2s;
     transform: scale(1.2); 
+}
+.bt2:hover{
+    cursor:pointer;
+    background-color: yellow;
+    transition: transform .2s;
+    transform: scale(1.2); 
+}
+.bt3:hover{
+    cursor:pointer;
+    background-color: red;
+    transition: transform .2s;
+    transform: scale(1.2); 
+}
+.bt1{
+    background-color: white;
+}
+.bt2{
+    background-color: white;
+}
+.bt3{
+    background-color: white;
 }

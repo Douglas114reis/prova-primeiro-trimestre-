@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: 90%; /* Define a largura máxima em porcentagem */
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -43,4 +43,20 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Adicione regras de estilo para tornar a imagem responsiva */
+#image img {
+    max-width: 100%; /* A imagem não ultrapassará a largura do contêiner pai */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%; /* Reduz a largura máxima para telas menores */
+    }
+
+    #options button {
+        font-size: 14px; /* Reduz o tamanho da fonte dos botões em telas menores */
+    }
 }
